@@ -1,0 +1,40 @@
+#nav {
+    width: 100%;
+    top:0;
+    z-index: 999;
+    background-color: #fff;
+    .container {
+        .navbar-header {
+            .navbar-toggle {
+                margin-top: 25px;
+            }
+            a {
+                height: 80px;
+                line-height: 50px;
+                i {
+                    font-size: 30px;
+                    color: @main-color;
+                }
+            }
+        }
+        .navbar-collapse {
+            .navbar-nav {
+                li {
+                    &.active {
+                        a {
+                            background-color: #fff;
+                            .border_btm(1px, solid, @main-color);
+                        }
+                    }
+                    a {
+                        height: 80px;
+                        line-height: 50px;
+                        &:hover {
+                            .border_btm(1px, solid, @main-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

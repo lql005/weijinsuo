@@ -1,0 +1,33 @@
+#header {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    .row {
+        font-size: 12px;
+        div {
+            height: 40px;
+            line-height: 40px;
+            position: relative;
+            &:hover img {
+                display: block;
+            }
+            img {
+                display: none;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 40px;
+                z-index: 999;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+                &[class*="btn-danger"] {
+                    color: #fff;
+                }
+            }
+            &~div {
+                border-left: 1px solid #ccc;
+            }
+        }
+    }
+}
